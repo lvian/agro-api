@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "8b38d692-c98f-4d14-ab0d-2d2d1b1f437c",
+		"name": "Agro APi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get List of Fields",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/fields",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fields"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Field by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/fields/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fields",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Field",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"c0f63e74-n27ef-4931-fgb3-0e770ae9iu45\",\n    \"name\": \"Little Farm\",\n    \"created\": \"2021-08-01T00:00:00.000+00:00\",\n    \"updated\": \"2021-08-01T00:00:00.000+00:00\",\n    \"countryCode\": \"ITA\",\n    \"boundaries\": {\n        \"id\": \"c0f63e74-n27ef-4931-fgb3-0e770ae9iu45\",\n        \"created\": \"2020-07-25T10:03:56.782Z\",\n        \"updated\": \"\",\n        \"geoJson\": {\n            \"type\": \"Feature\",\n            \"properties\": {},\n            \"geometry\": {\n                \"type\": \"Polygon\",\n                \"coordinates\": [\n                    [\n                        [\n                            -5.553604888914691,\n                            33.88229680420605\n                        ],\n                        [\n                            -5.5516736984239685,\n                            33.88229680420605\n                        ],\n                        [\n                            -5.5516736984239685,\n                            33.88372189858022\n                        ],\n                        [\n                            -5.555965232847882,\n                            33.88390003370375\n                        ],\n                        [\n                            -5.555965232847882,\n                            33.88229680420605\n                        ],\n                        [\n                            -5.553604888914691,\n                            33.88229680420605\n                        ]\n                    ]\n                ]\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/fields/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fields",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Field",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"c0f63e74-n27ef-4931-fgb3-0e770ae9iu45\",\n    \"name\": \"Little Farm\",\n    \"created\": \"2021-08-01T00:00:00.000+00:00\",\n    \"updated\": \"2021-08-01T00:00:00.000+00:00\",\n    \"countryCode\": \"ITA\",\n    \"boundaries\": {\n        \"id\": \"c0f63e74-n27ef-4931-fgb3-0e770ae9iu45\",\n        \"created\": \"2020-07-25T10:03:56.782Z\",\n        \"updated\": \"2020-08-05T10:03:56.782Z\",\n        \"geoJson\": {\n            \"type\": \"Feature\",\n            \"properties\": {},\n            \"geometry\": {\n                \"type\": \"Polygon\",\n                \"coordinates\": [\n                    [\n                        [\n                            -5.553604888914691,\n                            33.88229680420605\n                        ],\n                        [\n                            -5.5516736984239685,\n                            33.88229680420605\n                        ]\n                    ]\n                ]\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/fields/c0f63e74-n27ef-4931-fgb3-0e770ae9iu45",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fields",
+						"c0f63e74-n27ef-4931-fgb3-0e770ae9iu45"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Field",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"fieldId\": \"c0f63e74-n27ef-4931-fgb3-0e770ae9iu45\",\n    \"name\": \"Azienda Agricola\",\n    \"created\": \"2021-08-01T00:00:00.000+00:00\",\n    \"updated\": \"2021-08-01T00:00:00.000+00:00\",\n    \"countryCode\": \"ITA\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/fields/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fields",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

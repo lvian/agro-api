@@ -1,0 +1,54 @@
+[
+  {
+    "dt": 1620136800,
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01d"
+      }
+    ],
+    "main": {
+      "temp": 286.16,
+      "feels_like": 284.22,
+      "pressure": 1015,
+      "humidity": 71,
+      "temp_min": 284.82,
+      "temp_max": 287.15
+    },
+    "wind": {
+      "speed": 2.06,
+      "deg": 270
+    },
+    "clouds": {
+      "all": 1
+    }
+  },
+  {
+    "dt": 1620136800,
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01d"
+      }
+    ],
+    "main": {
+      "temp": 286.16,
+      "feels_like": 284.22,
+      "pressure": 1015,
+      "humidity": 71,
+      "temp_min": 284.82,
+      "temp_max": 287.15
+    },
+    "wind": {
+      "speed": 2.06,
+      "deg": 270
+    },
+    "clouds": {
+      "all": 1
+    }
+  }
+]

@@ -1,0 +1,19 @@
+version: '2'
+services:
+  agro-api:
+    build: .
+    ports:
+      - 8080:8080/tcp
+    links:
+      - postgres_db
+
+  postgres_db:
+    image: "postgres:11.4"
+    restart: always
+    expose:
+      - 5432
+    ports:
+      - 5432:5432/tcp
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: postgres
