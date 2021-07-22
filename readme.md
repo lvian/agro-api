@@ -1,3 +1,9 @@
+# Agro-Api
+Project created using Sprig Boot
+
+Java docker image being used is `adoptopenjdk/maven-openjdk11`
+Postgres docker image: `postgres:11.4`
+
 # Installation
 After cloning the project go inside its folder and run
 
