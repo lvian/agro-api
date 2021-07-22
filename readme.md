@@ -5,7 +5,7 @@ After cloning the project go inside its folder and run
 
 It will compile the app image and deploy its container in conjunction with a postgres one.
 
-The app uses port 8080
+The app container runs on port 8080 and the postgres container on 5432
 
 # Endpoints
 
@@ -18,6 +18,7 @@ GET request to fields/
 `localhost:8080/fields`
 
 Sample response:
+
 ![img.png](img.png)
 
 ### Get a single field using an id parameter
